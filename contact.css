@@ -1,0 +1,129 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lacquer', sans-serif;
+    background-color: #282929;
+    color: #f6d819;
+    padding: 20px;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-bar {
+    background-color: #21aec7;
+    color: rgb(230, 203, 25);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.navigation-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.navigation-links a:hover {
+    color: #523a0d;
+}
+
+hr {
+    width: 90%;
+    border: 0.5px solid #811d1d;
+    margin: 20px 0;
+}
+
+.intro-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.contact-section {
+    background-color: rgb(163, 100, 100);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section form {
+    width: 100%;
+}
+
+.label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.inputFields {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea.inputFields {
+    resize: none;
+}
+
+#submitButton {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submitButton:hover {
+    background-color: #ffa500;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navigation-links a {
+        font-size: 1rem;
+    }
+
+    .contact-section {
+        padding: 20px;
+    }
+
+    #submitButton {
+        width: 100%;
+        padding: 12px;
+    }
+}

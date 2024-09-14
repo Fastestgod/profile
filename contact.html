@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+    <title>Stanley Yu</title> 
+</head>
+
+<body>
+    <div class="page-container">
+        <header class="header-bar">
+            <br>
+            <h1>Contact Me</h1> 
+            <nav class="navigation-links">
+                <a href="index.html">Home</a>
+                <a href="hobby.html">Hobbies</a>
+                <a href="contact.html">Contact Me</a>
+            </nav>
+        </header>
+        <hr>
+
+        <section class="intro-section">
+            <h2>Get in Touch</h2>
+        </section>
+
+        <section class="contact-section">
+            <form id="contactForm" action="mailto:ERIKA.LIN25@myhunter.cuny.edu?subject=Inquiry" target="_blank" method="post" enctype="text/plain">
+                <br>
+                <label for="name">Name:</label>
+                <input class="inputFields" type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input class="inputFields" type="text" id="phone" name="phone" placeholder="Enter your phone number">
+
+                <label for="email">Email Address:</label>
+                <input class="inputFields" type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="comments">Comments:</label>
+                <textarea class="inputFields" id="comments" rows="4" name="comments" placeholder="Your comments or message here"></textarea>
+                
+                <button id="submitButton" type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
