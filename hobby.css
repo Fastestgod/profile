@@ -1,3 +1,4 @@
+/* General reset */
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +29,10 @@ body {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+}
+
+.navigation-links {
+    margin: 20px 0;
 }
 
 .navigation-links a {
@@ -84,6 +89,7 @@ hr {
     transform: scale(1.05);
 }
 
+/* Media Queries for Tablets and Small Laptops */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -96,5 +102,54 @@ hr {
     .hobby-photo {
         width: 150px;
         height: 100px;
+    }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .header-bar {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .navigation-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navigation-links a {
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+
+    .intro-section p {
+        font-size: 1rem;
+    }
+
+    .hobby-gallery {
+        gap: 15px;
+    }
+
+    .gallery-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hobby-photo {
+        width: 100px;
+        height: 75px;
+    }
+
+    hr {
+        width: 100%;
     }
 }

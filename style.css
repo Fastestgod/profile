@@ -32,6 +32,10 @@ h1 {
     margin-bottom: 20px;
 }
 
+#theLinks {
+    margin: 20px 0;
+}
+
 #theLinks a {
     color: white;
     text-decoration: none;
@@ -93,7 +97,7 @@ hr {
     color: white;
 }
 
-/* Media Queries for Responsive Design */
+/* Media Queries for Tablets and Small Laptops */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -111,5 +115,58 @@ hr {
     .profile-image {
         width: 120px;
         height: 120px;
+    }
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .bar-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    #theLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #theLinks a {
+        font-size: 0.9rem;
+        margin: 5px 0;
+    }
+
+    .intro-container,
+    .main-container {
+        padding: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .intro-container p,
+    .main-container p {
+        font-size: 0.9rem;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    .footer-bar {
+        padding: 15px;
     }
 }
